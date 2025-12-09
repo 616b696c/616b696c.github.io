@@ -90,15 +90,7 @@ function tick() {
     ball.update();
     ball.collisionDetect();
   }
+  requestAnimationFrame(tick);
 }
 
-function run()
-{
-  while (true)
-  {
-    tick();
-    requestAnimationFrame(tick);
-  }
-}
-
-run();
+tick();
