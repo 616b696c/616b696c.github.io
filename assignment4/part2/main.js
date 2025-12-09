@@ -71,8 +71,8 @@ const maxBalls = 25;
 while (balls.length < maxBalls) {
   const size = random(10, 20);
   const ball = new Ball(
-    random(0 + size, width - size),
-    random(0 + size, height - size),
+    random(0 + size, width - size), // what was the point of adding zero here ?
+    random(0 + size, height - size), // what was the point of adding zero here ?
     random(-7, 7),
     random(-7, 7),
     randomRGB(),
